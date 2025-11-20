@@ -1,0 +1,17 @@
+<div class="card bg-yellow-100 shadow-xl w-full max-w-2xl mx-auto border border-blue-300 mt-4">
+    <div class="card-body">
+        <h2 class="card-title">USER DATA</h2>
+        <p class="text-sm">Formulaire d'édition :</p>
+        <div class="form-control w-full">
+            <input type="text" placeholder="votre nom" class="input input-bordered w-full bg-white"
+                [(ngModel)]="user.name" />
+        </div>
+        <div class="form-control w-full mt-2">
+            <input type="number" placeholder="0" class="input input-bordered w-full bg-white" [(ngModel)]="user.age" />
+        </div>
+        <div class="card-actions justify-start mt-4">
+            <button class="btn bg-yellow-200 border-gray-400 text-black hover:bg-yellow-300" (click)="updateUser()">MAJ
+                des Data</button>
+        </div>
+    </div>
+</div>
